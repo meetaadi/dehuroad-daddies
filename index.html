@@ -52,10 +52,11 @@
         border-style:dashed;
         border-width: 7px;
         margin-right: auto;
-        padding: 20px;
+        padding: 10px;
         background-color: #1e85bd;
         text-align: center;
         display: flex;
+        flex-wrap : wrap;
         box-shadow: #303030 10px 5px 7px 4px ;
         justify-content: center;
     }
@@ -87,7 +88,7 @@
         padding: 6px;
     }
 
-     a:onclick{
+     a:active{
         background-color: #000000;
         padding: 3px;
     }
@@ -116,7 +117,9 @@
 }
 
     .mem {
-        width: 44%;
+        width:45%;
+        max-width:650px;
+        min-width:280px;
         padding: 20px;
         margin: 17px;
         border: 2px outset black;
@@ -135,6 +138,62 @@
         font-size: 40px;
         text-shadow: 2px 2px 6px 6px #000000 ;
 }
+
+    /*Media Respsonive */
+
+    /* Tablets */
+@media (max-width:900px){
+
+    .mem{
+        width:80%;
+    }
+
+    li a{
+        font-size:14px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    .mem p{
+        font-size:18px;
+    }
+
+}
+
+
+/* Phones */
+@media (max-width:600px){
+
+    ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    li{
+        width:80%;
+    }
+
+    .mem{
+        width:95%;
+    }
+
+    #heading{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:26px;
+        text-align:center;
+    }
+
+    .mem p{
+        font-size:16px;
+    }
+
+}
+    
 </style>
 
 <body>
@@ -326,3 +385,4 @@ Also appears in campus lore as Aaryan’s unofficial side character. Main plot u
 </body>
 
 </html>
+
